@@ -15,7 +15,7 @@
  */
 
  .background_container {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3)), url('UbuntuBlurred.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3)), image-url('UbuntuBlurred.jpg');
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
