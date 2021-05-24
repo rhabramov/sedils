@@ -1,0 +1,50 @@
+<div class="topnav">
+    <div class="topnav-centered">
+        <a href='/'><b>SEDILS</b> <%= image_tag("Logo.png", height: '20', style: 'vertical-align:middle;') %></a>
+    </div>
+
+    <a href="/">Home</a>
+    
+    <div class="topnav-right">
+        <a class="active" href="signup.html">Sign up</a>
+    </div>
+</div> 
+
+<div class="background_container" id="image_container">
+    <br>
+    <h1 class="signup"><b>Upload. Format. Slide.</b></h1>
+    <br>
+    <p class="signup">
+        <em>
+            Tired of dragging, typing, and formatting powerpoint shapes and arrows from an excel to create org charts?
+            Introducing <b>SEDILS</b>, an automated method of creating, formatting and exporting org charts from 
+            excel into presentations. Simply upload your management org chart from excel, format your ideal org node,
+            and export it to ppt form - no more messing around with split screen, or Visio or Smartart.
+        </em>
+    </p>
+    <br><br>
+    <h2 class="signup">You've caught us early!</h3>
+    <br><br><br>
+    <p class="signup">
+        <em>
+            We're working hard to put the finishing touches on sedils. If you'd like us to send you a reminder when 
+            we're ready, please enter your email, and add any comments or questions below.
+        </em>
+    </p>
+    <br><br><br>
+
+
+    <%= form_with model: @signup do |form| %>
+        <div>
+            <%= form.text_field :email, placeholder: 'Enter your email...', size: '40' %>
+            <%= form.submit value: 'Join Waiting List'%>
+        </div>
+        <br>
+        <div> 
+            <%= form.text_area :comment, cols: 90, rows: 5 %> 
+        </div> 
+    <% end %>
+
+    <br>
+
+</div>
