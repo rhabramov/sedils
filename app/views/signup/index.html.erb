@@ -36,12 +36,12 @@
 
     <%= form_with model: @signup do |form| %>
         <div>
-            <%= form.text_field :email, placeholder: 'Enter your email...', size: '40' %>
+            <%= form.text_field :email, placeholder: 'Enter your email...' %>
             <%= form.submit value: 'Join Waiting List'%>
         </div>
         <br>
         <div> 
-            <%= form.text_area :comment, cols: 90, rows: 5 %> 
+            <%= form.text_area :comment, rows: 5 %> 
         </div> 
     <% end %>
 
