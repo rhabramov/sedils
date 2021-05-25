@@ -92,44 +92,9 @@ form {
     text-align: center;
 }
 
-.old_new {
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 0px;
-    padding: 10px;
-    text-align: center;
-    overflow: hidden;
-}
-
-.left_2 {
-    width: 50%;
-    height: 575px;
-    padding: 10px;
-    float: left;
-    background-color: #a3a0a3;
-}
-
-.right_2 {
-    padding: 10px;
-    height: 575px;
-    overflow: hidden;
-    background-color: #be756b;
-}
-
 .old_p {
     text-align: center;
     font-size:larger;
-}
-
-.benefits {
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 0px;
-    padding: 10px;
-    background-color: #1a0817;
-    text-align: center;
-    overflow: hidden;
-    color: white;
 }
 
 .left_3 {
@@ -147,6 +112,7 @@ form {
 .right_3 {
     padding: 50px;
     overflow: hidden;
+    float: left;
 }
 
 .get_it {
@@ -157,4 +123,55 @@ form {
     background-color: #1a0817;
     text-align: center;
     color: white;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    background-color:#1a0817;
+    color: white;
+    text-align: center;
+}
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+    .left_3 {
+        width:auto;
+    }
+    .center_3 {
+        width:auto;
+    }
+}
+
+.flex-container > div {
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.left_2 {
+    padding: 10px;
+    float: left;
+    background-color: #a3a0a3;
+}
+
+.right_2 {
+    padding: 10px;
+    background-color: #be756b;
+}
+
+.flex-container-2 {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    background-color:#1a0817;
+    color: white;
+    text-align: center;
+}
+@media (max-width: 800px) {
+    .flex-container-2 {
+      flex-direction: column;
+    }
 }
